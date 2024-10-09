@@ -1,0 +1,8 @@
+@startuml
+component "ZipCodeInput" as ZipCodeInput
+component "useFetchAddress" as useFetchAddress
+component "API" as API
+
+ZipCodeInput -down-> useFetchAddress
+useFetchAddress -down-> API
+@enduml

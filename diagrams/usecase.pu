@@ -1,0 +1,9 @@
+@startuml
+actor ユーザー
+actor "APIサービス" as API
+
+ユーザー --> (郵便番号の入力)
+(郵便番号の入力) --> (APIの呼び出し)
+(APIの呼び出し) --> API
+API --> (住所情報の表示)
+@enduml

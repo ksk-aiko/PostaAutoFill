@@ -1,0 +1,14 @@
+@startuml
+|ユーザー|
+start
+:郵便番号入力;
+:API呼び出し;
+|システム|
+:住所データ取得;
+if (データあり?) then (yes)
+  :住所情報の表示;
+else (no)
+  :エラーメッセージ表示;
+endif
+stop
+@enduml

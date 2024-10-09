@@ -1,0 +1,7 @@
+@startuml
+skinparam componentStyle rectangle
+package "Reactアプリケーション" {
+    [ZipCodeInputコンポーネント] --> [useFetchAddress]
+    [ZipCodeInputコンポーネント] --> [APIエンドポイント]
+}
+@enduml

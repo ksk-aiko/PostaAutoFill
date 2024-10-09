@@ -1,0 +1,11 @@
+@startuml
+actor ユーザー
+participant ZipCodeInput as コンポーネント
+participant API
+participant UI as 表示
+
+ユーザー -> コンポーネント: 郵便番号入力
+コンポーネント -> API: 郵便番号で住所情報取得
+API -> コンポーネント: 住所情報レスポンス
+コンポーネント -> UI: 住所情報を表示
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+class ZipCodeInput {
+  +handleZipCodeChange()
+  +useEffect()
+}
+class useFetchAddress {
+  +fetchAddress()
+  -apiEndpoint
+}
+ZipCodeInput --> useFetchAddress
+@enduml
